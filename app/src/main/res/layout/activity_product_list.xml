@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundcolor"
+    tools:context=".ui.activity.product_list.ProductListActivity">
+
+    <include
+        android:id="@+id/product_list_Toolbar"
+        layout="@layout/app_bar_center_title"
+        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <include
+        android:id="@+id/homeBottomLayout"
+        layout="@layout/list_page_top"
+        android:layout_height="40dp"
+        android:layout_width="0dp"
+
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/product_list_Toolbar"
+        />
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/no_content_Tv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="@string/no_products_available"
+        android:gravity="center"
+        android:visibility="gone"
+        android:textSize="18sp"
+        android:textColor="@color/colorBlack"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/listpage_RV"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="5dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/homeBottomLayout"
+        app:layout_constraintStart_toStartOf="parent"
+
+
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,794 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/backgroundcolor"
+    android:layout_height="match_parent"
+    >
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/profile_top_cl"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/backgroundcolor"
+            >
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/log_firstcl"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:background="@color/green"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/lady_img"
+                    android:layout_width="76dp"
+                    android:layout_height="76dp"
+                    android:layout_marginStart="20dp"
+                    android:background="@drawable/lady"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"></androidx.appcompat.widget.AppCompatImageView>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/welcome_cl"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginTop="15dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/lady_img"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/welcome_id"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/helo"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="12sp"
+                        android:paddingTop="10dp"
+                        android:layout_marginTop="5dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"></androidx.appcompat.widget.AppCompatTextView>
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/username_Tv"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:text="Kriccbbh"
+                        android:inputType="textCapSentences"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="12sp"
+                        android:paddingTop="10dp"
+                        app:layout_constraintBottom_toBottomOf="@+id/welcome_id"
+                        app:layout_constraintStart_toEndOf="@+id/welcome_id"
+                        app:layout_constraintTop_toTopOf="@+id/welcome_id"></androidx.appcompat.widget.AppCompatTextView>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <!--<androidx.appcompat.widget.LinearLayoutCompat
+                    android:id="@+id/linear_log"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="12dp"
+                    android:layout_marginTop="8dp"
+                    android:orientation="horizontal"
+                    android:weightSum="4"
+                    app:layout_constraintEnd_toEndOf="parent"
+
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toEndOf="@+id/lady_img"
+                    app:layout_constraintTop_toBottomOf="@+id/welcome_cl">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/love_img_id"
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:layout_marginTop="3dp"
+                        android:layout_weight="0"
+                        android:background="@drawable/low"
+
+                        ></androidx.appcompat.widget.AppCompatImageView>
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/low_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="3dp"
+                        android:layout_weight="1.2"
+                        android:text="@string/orders"
+                        android:textColor="#d7e34f"
+                        android:textSize="10sp"
+                        ></androidx.appcompat.widget.AppCompatTextView>
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/place_img"
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:layout_marginTop="3dp"
+                        android:layout_weight="0"
+                        android:background="@drawable/plce"></androidx.appcompat.widget.AppCompatImageView>
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/myAddressId"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="3dp"
+                        android:layout_weight="1.2"
+                        android:text="@string/adrs"
+                        android:textSize="10sp"
+                        android:textColor="#d7e34f"></androidx.appcompat.widget.AppCompatTextView>
+                </androidx.appcompat.widget.LinearLayoutCompat>
+-->
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/log_out_Tv"
+                    android:layout_width="150dp"
+                    android:layout_height="26dp"
+                    android:layout_margin="12dp"
+                    android:background="@drawable/circle_logout"
+                    android:gravity="center"
+                    android:text="@string/logout"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/green"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/lady_img"
+                    app:layout_constraintTop_toBottomOf="@+id/welcome_cl"
+
+
+                    />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/log_secndcl"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:background="@drawable/background_curve"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/log_firstcl">
+
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/address_layercl"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    >
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/addressimage_id"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/addres_icon"
+                        android:layout_margin="10dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"/>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/address_thd_cl"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        app:layout_constraintStart_toEndOf="@id/addressimage_id"
+                        app:layout_constraintBottom_toBottomOf="@id/addressimage_id"
+                        app:layout_constraintTop_toTopOf="@id/addressimage_id">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/addressLink_id"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/adrs"
+                            android:textColor="#333333"
+                            android:textSize="12sp"
+                            android:paddingTop="5dp"
+
+
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"></androidx.appcompat.widget.AppCompatTextView>
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/adresssub"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/fill_your_address"
+                            android:textSize="8sp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/addressLink_id"
+
+                            ></androidx.appcompat.widget.AppCompatTextView>
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <View
+                        android:id="@+id/addressid_view"
+                        android:layout_width="0dp"
+                        android:layout_height="0.1dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="20dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        android:background="@color/colorBlack"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/address_thd_cl"/>
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/address_frst_arw"
+                        android:layout_width="7dp"
+                        android:layout_height="10dp"
+                        android:background="@drawable/ic_arrow_right"
+                        app:layout_constraintBottom_toBottomOf="@id/addressimage_id"
+                        app:layout_constraintTop_toTopOf="@id/addressimage_id"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        android:layout_marginEnd="20dp"
+                        ></androidx.appcompat.widget.AppCompatImageView>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:paddingBottom="10dp"
+
+                    android:id="@+id/orders_layercl"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/address_layercl"
+                    >
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/ordersimage_id"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_margin="10dp"
+                        android:src="@drawable/order_icon"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/orders_thd_cl"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        app:layout_constraintStart_toEndOf="@id/ordersimage_id"
+                        app:layout_constraintBottom_toBottomOf="@id/ordersimage_id"
+                        app:layout_constraintTop_toTopOf="@id/ordersimage_id">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/odersLink_id"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/orders"
+                            android:textColor="#333333"
+                            android:textSize="12sp"
+                            android:paddingTop="5dp"
+
+
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"/>
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/ordersub"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/checkorder"
+                            android:textSize="8sp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/odersLink_id"
+
+                            ></androidx.appcompat.widget.AppCompatTextView>
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <View
+                        android:id="@+id/odersid_view"
+                        android:layout_width="0dp"
+                        android:layout_height="0.1dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="20dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        android:background="@color/colorBlack"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/orders_thd_cl"/>
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/oders_frst_arw"
+                        android:layout_width="7dp"
+                        android:layout_height="10dp"
+                        android:background="@drawable/ic_arrow_right"
+                        app:layout_constraintBottom_toBottomOf="@id/ordersimage_id"
+                        app:layout_constraintTop_toTopOf="@id/ordersimage_id"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        android:layout_marginEnd="20dp"
+                        ></androidx.appcompat.widget.AppCompatImageView>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/first_layercl"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/orders_layercl"
+                    >
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/box_id"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:background="@drawable/notification_icon"
+                        android:layout_margin="10dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"/>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/thd_cl"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        app:layout_constraintStart_toEndOf="@id/box_id"
+                        app:layout_constraintBottom_toBottomOf="@id/box_id"
+                        app:layout_constraintTop_toTopOf="@id/box_id">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/ordr_id"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/notification"
+                            android:textColor="#333333"
+                            android:textSize="12sp"
+                            android:paddingTop="5dp"
+
+                            app:layout_constraintBottom_toTopOf="@id/check_id"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"></androidx.appcompat.widget.AppCompatTextView>
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/check_id"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/notificationmanage"
+                            android:textSize="8sp"
+
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/ordr_id"
+
+                            ></androidx.appcompat.widget.AppCompatTextView>
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <View
+                        android:id="@+id/log_view"
+                        android:layout_width="0dp"
+                        android:layout_height="0.1dp"
+                        android:layout_marginTop="10dp"
+                       android:layout_marginStart="10dp"
+                        android:layout_marginEnd="20dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        android:background="@color/colorBlack"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/thd_cl"/>
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/frst_arw"
+                        android:layout_width="7dp"
+                        android:layout_height="10dp"
+                        android:background="@drawable/ic_arrow_right"
+                        app:layout_constraintBottom_toBottomOf="@id/box_id"
+                        app:layout_constraintTop_toTopOf="@id/box_id"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        android:layout_marginEnd="20dp"
+                       ></androidx.appcompat.widget.AppCompatImageView>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+                //
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/secnd_layercl"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/first_layercl">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/wish_icon_id"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/changepasswrd_icon"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"></androidx.appcompat.widget.AppCompatImageView>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/forth_cl"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        app:layout_constraintBottom_toBottomOf="@id/wish_icon_id"
+                        app:layout_constraintStart_toEndOf="@id/wish_icon_id"
+                        app:layout_constraintTop_toTopOf="@id/wish_icon_id">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/whishlist_id"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/change_paswrd"
+                            android:textColor="#333333"
+                            android:textSize="12sp"
+
+
+                            app:layout_constraintBottom_toTopOf="@id/loved_id"
+
+
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"></androidx.appcompat.widget.AppCompatTextView>
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/loved_id"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/Change_your_profile"
+                            android:textSize="8sp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/whishlist_id"
+
+                            ></androidx.appcompat.widget.AppCompatTextView>
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <View
+                        android:id="@+id/wish_view"
+                        android:layout_width="0dp"
+                        android:layout_height="0.1dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="20dp"
+                        android:background="@color/green"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/forth_cl"
+                        tools:ignore="UnknownId"/>
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/thd_arw"
+                        android:layout_width="7dp"
+                        android:layout_height="10dp"
+                        android:layout_marginEnd="20dp"
+                        android:background="@drawable/ic_arrow_right"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"></androidx.appcompat.widget.AppCompatImageView>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+                //
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/third_layercl"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:paddingBottom="10dp"
+
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/secnd_layercl">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/help_icon_id"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/language_icon"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/frth_arw"
+                        android:layout_width="7dp"
+                        android:layout_height="10dp"
+                        android:layout_marginEnd="20dp"
+                        android:background="@drawable/ic_arrow_right"
+                        app:layout_constraintBottom_toBottomOf="@+id/help_id"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/help_id" />
+
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/help_id"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:text="@string/language"
+                        android:textColor="#333333"
+                        android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@+id/help_icon_id"
+                        app:layout_constraintStart_toEndOf="@+id/help_icon_id"
+
+                        app:layout_constraintTop_toTopOf="@+id/help_icon_id"></androidx.appcompat.widget.AppCompatTextView>
+
+
+
+
+
+                    ///
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+<!--
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/fourth_layercl"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/third_layercl">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/myaddress_icon_id"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/box"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/myaddress_arw"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/ic_arrow_right"
+                        app:layout_constraintBottom_toBottomOf="@+id/myaddress_id"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/myaddress_id" />
+
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/myaddress_id"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:gravity="center"
+                        android:text="MyAddres"
+                        android:textColor="#333333"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toEndOf="@+id/myaddress_icon_id"
+                        app:layout_constraintTop_toTopOf="parent"></androidx.appcompat.widget.AppCompatTextView>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>-->
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/baseclProfileEdit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:paddingBottom="80dp"
+            android:background="@color/backgroundcolor"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/log_secndcl"
+            >
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/savecl"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+
+                android:background="@drawable/background_curve"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                >
+                //
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/fistnameid"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+
+                    android:focusable="false"
+                    android:focusableInTouchMode="true"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/firsname_Et"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/first_name"
+                        android:textColor="@color/colorBlack"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:focusableInTouchMode="true"
+                        android:singleLine="true"
+                        android:textColorHint="#282828"
+                        android:textSize="12sp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/lastnameid"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:focusable="false"
+                    android:focusableInTouchMode="true"
+                    android:layout_marginEnd="10dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/fistnameid">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/lastnameEt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/last_name"
+                        android:singleLine="true"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:textColor="@color/colorBlack"
+                        android:textColorHint="#282828"
+                        android:textSize="12sp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/mobile_id"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:focusable="false"
+                    android:focusableInTouchMode="true"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/lastnameid">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/mobEt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:focusable="false"
+
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:focusableInTouchMode="false"
+                        android:focusedByDefault="false"
+                        android:textColor="@color/colorBlack"
+                        android:hint="@string/mobileno"
+                        android:singleLine="true"
+                        android:textColorHint="#000000"
+                        android:textSize="12sp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/emlid"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginTop="10dp"
+                    android:focusable="false"
+                    android:focusableInTouchMode="true"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/mobile_id">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/emailEt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:textColor="@color/colorBlack"
+                        android:focusedByDefault="false"
+                        android:hint="@string/emil"
+                        android:singleLine="true"
+                        android:textColorHint="#000000"
+                        android:textSize="12sp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/genderid"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginTop="10dp"
+                    android:focusable="false"
+                    android:focusableInTouchMode="true"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/emlid">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/genderEt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:focusable="false"
+                        android:layout_marginTop="10dp"
+
+                        android:focusableInTouchMode="false"
+                        android:focusedByDefault="false"
+                        android:textColor="@color/colorBlack"
+                        android:hint="@string/gender"
+                        android:singleLine="true"
+                        android:textColorHint="#000000"
+                        android:textSize="12sp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/editTV"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="10dp"
+
+                    android:background="@color/colorPink"
+                    android:gravity="center"
+                    android:text="@string/save"
+                    android:textColor="@color/colorWhite"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+
+                    app:layout_constraintTop_toBottomOf="@+id/genderid"
+
+                    ></androidx.appcompat.widget.AppCompatTextView>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

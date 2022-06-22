@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="AutoViewPager">
+        <attr format="boolean" name="avp_indeterminate"/>
+        <attr format="boolean" name="avp_autoScroll"/>
+        <attr format="integer" name="avp_duration"/>
+    </declare-styleable>
+</resources>

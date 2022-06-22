@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:elevation="3dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/homeMallCL"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:background="@color/colorWhite"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_chainStyle="spread"
+            app:layout_constraintStart_toStartOf="parent"
+            android:foreground="?android:attr/selectableItemBackground"
+            app:layout_constraintEnd_toStartOf="@+id/homeGiftCL"
+           >
+
+        <View
+                android:layout_width="0dp"
+                android:layout_height="0.2dp"
+                android:background="@color/colorWhite"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+     <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/homeMallIV"
+        android:layout_width="25dp"
+        android:layout_height="17.5dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/home_icon"/>
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/mallTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/home"
+                android:textColor="@color/colorPink"
+                android:textSize="10sp"
+               android:layout_marginBottom="4dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/homeMallIV"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+            android:id="@+id/homeGiftCL"
+            android:layout_width="0dp"
+            android:layout_height="65dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_chainStyle="spread"
+            app:layout_constraintStart_toEndOf="@+id/homeMallCL"
+            app:layout_constraintEnd_toStartOf="@+id/homeScanCL">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/category_Cl"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="15dp"
+                android:foreground="?android:attr/selectableItemBackground"
+                app:layout_constraintTop_toTopOf="parent"
+                android:background="@color/colorWhite"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent">
+            <View
+                    android:layout_width="0dp"
+                    android:layout_height="0.2dp"
+                    android:background="@color/colorWhite"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"/>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/homeGiftIV"
+                    android:layout_width="20dp"
+                    android:layout_height="17.5dp"
+                 android:layout_marginTop="10dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:src="@drawable/category_icon"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/earnBurnTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/category"
+                android:layout_marginBottom="4dp"
+                    android:textSize="10sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/homeGiftIV"/>
+
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/giftTutorialIndicatorIV"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/category_icon"
+                android:visibility="gone"
+
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/homeScanCL"
+        android:layout_width="60dp"
+        android:layout_height="65dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintEnd_toStartOf="@+id/homeServiceCL"
+        app:layout_constraintStart_toEndOf="@+id/homeGiftCL">
+
+    <View
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:background="@color/colorWhite"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+    />
+    <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/homeScanIV"
+            android:layout_width="25dp"
+            android:layout_height="17.5dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:src="@drawable/wishlist_icon"
+
+    />
+
+    <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/homeScanTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/wishlist"
+
+
+            android:textSize="10sp"
+            android:layout_marginBottom="4dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/homeScanIV"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="0dp"
+            android:layout_height="65dp"
+            android:id="@+id/homeServiceCL"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_chainStyle="spread"
+            app:layout_constraintEnd_toStartOf="@+id/homeMoreCL"
+            app:layout_constraintStart_toEndOf="@+id/homeScanCL">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cart_Cl"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="15dp"
+                android:foreground="?android:attr/selectableItemBackground"
+                app:layout_constraintTop_toTopOf="parent"
+                android:background="@color/colorWhite"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent">
+
+
+            <View
+                    android:layout_width="0dp"
+                    android:layout_height="0.2dp"
+                    android:background="@color/colorWhite"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"/>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/homeServiceIV"
+                    android:layout_width="25dp"
+                    android:layout_height="17.5dp"
+                    android:layout_marginTop="10dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:src="@drawable/cart_icon"/>
+            <LinearLayout
+                android:id="@+id/cartCountLL"
+                android:background="@drawable/circle_red"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:visibility="gone"
+                android:layout_marginStart="15dp"
+                app:layout_constraintBottom_toTopOf="@+id/homeServiceIV"
+                app:layout_constraintStart_toStartOf="@+id/homeServiceIV">
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/cart_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+            android:layout_marginStart="1dp"
+                android:text=""
+                android:visibility="gone"
+                android:textColor="@color/colorWhite"
+                android:textSize="12dp"
+
+                />
+        </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/homeServiceTV"
+                android:layout_width="wrap_content"
+                android:layout_height="12dp"
+                android:layout_marginBottom="4dp"
+                android:text="@string/cart"
+                android:textSize="10sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/homeServiceIV" />
+
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/serviceTutorialIndicatorIV"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/category_icon"
+                android:visibility="gone"
+
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:id="@+id/homeMoreCL"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:background="@color/colorWhite"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/homeServiceCL">
+
+    <View
+            android:layout_width="0dp"
+            android:layout_height="0.2dp"
+            android:background="@color/colorWhite"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/homeMoreIV"
+            android:layout_width="30dp"
+            android:layout_height="17.5dp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:src="@drawable/profile_icon"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/homeMoreTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/profile"
+android:textSize="10sp"
+        android:layout_marginBottom="4dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/homeMoreIV"/>
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

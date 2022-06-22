@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorPink">#FC2D6C</color>
+    <color name="green">#277e86</color>
+    <color name="red">#F44336</color>
+
+    <color name="litegreen">#34832e</color>
+    <color name="blue">#00c0b0</color>
+    <color name="white68">#adffffff</color>
+    <color name="violet">#065ea5</color>
+    <color name="litegren">#069b06</color>
+    <color name="litgren">#1ea92f</color>
+    <color name="liteblue">#19cbc5</color>
+
+    <color name="backgroundcolor">#EEEEEE</color>
+
+
+    <color name="color_bt">#f0544e</color>
+    <color name="snack_bg">#66C9D1</color>
+    <color name="snack_text_color">#2D276C</color>
+    <color name="placeholder_bg">#dddddd</color>
+
+
+
+
+    Type a message
+
+
+</resources>

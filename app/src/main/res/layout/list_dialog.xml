@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/white_rect">
+
+    <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/listRV"
+            android:layout_width="300dp"
+            android:layout_height="300dp">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+</RelativeLayout>

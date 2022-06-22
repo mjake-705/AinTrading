@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Ain Trading</string>
+
+    <string name="your_first" translatable="false">يرجى ادخال الاسم الاول</string>
+    <string name="your_email" translatable="false">رجاءا أدخل بريدك الإلكتروني</string>
+    <string name="valid_email" translatable="false">يرجى إدخال البريد الإلكتروني الصحيح</string>
+    <string name="your_password" translatable="false">من فضلك أدخل رقمك السري</string>
+    <string name="password_error" translatable="false">يجب أن تحتوي كلمة المرور على 6 أحرف على الأقل / حرف كبير واحد /
+واحد \\ \"+ \\ n\" + \"\\\" رقم / حرف واحد خاص
+</string>
+    <string name="confirm_password" translatable="false">يرجى التأكد من صحة كلمة المرور الخاصة بك</string>
+    <string name="password_not_matches" translatable="false">كلمة المرور غير متطابقة</string>
+    <string name="network_connection_issue" translatable="false">يبدو أنه لا يوجد اتصال بالشبكة</string>
+
+    <string name="facebk" translatable="false">موقع التواصل الاجتماعي الفيسبوك</string>
+    <string name="login_via_emil" translatable="false">تسجيل الدخول عبر البريد الإلكتروني</string>
+    <string name="email" translatable="false">البريد الإلكتروني</string>
+    <string name="password" translatable="false">كلمه السر</string>
+    <string name="forgot_password" translatable="false">هل نسيت كلمة المرور؟</string>
+    <string name="sign_in" translatable="false"> > تسجيل الدخول</string>
+    <string name="Dont_have_an_account" translatable="false">ليس لديك حساب؟</string>
+    <string name="sign_up" translatable="false">سجل</string>
+    <string name="first_name" translatable="false">الاسم الاول</string>
+    <string name="last_name" translatable="false">الكنية</string>
+    <string name="or" translatable="false">أو</string>
+    <string name="emil" translatable="false">البريد الإلكتروني</string>
+    <string name="server_error" translatable="false">حدث خطأ في الخادم. حاول مرة اخرى</string>
+    <string name="pasword" translatable="false">كلمه السر</string>
+    <string name="ok" translatable="false">حسنا</string>
+    <string name="bag" translatable="false">كيس</string>
+    <string name="Address" translatable="false">عنوان</string>
+    <string name="Payment" translatable="false">دفع</string>
+    <string name="offers" translatable="false">عروض</string>
+    <string name="ad_to_bag" translatable="false">أضف الى الحقيبة</string>
+    <string name="show_more" translatable="false">أظهر المزيد</string>
+    <string name="bag_total" translatable="false">حقيبة المجموع</string>
+    <string name="bag_discount" translatable="false">حقيبة الخصم</string>
+    <string name="tax" translatable="false">ضريبة</string>
+    <string name="coupn_discount" translatable="false">خصم القسيمة</string>
+    <string name="ordr_total" translatable="false">الطلب الكلي</string>
+    <string name="delivery_charge" translatable="false"> رسوم التوصيل</string>
+    <string name="total" translatable="false"> مجموع</string>
+    <string name="yo_yo_honey" translatable="false"> عزيزي الغناء</string>
+    <string name="solid" translatable="false"> الصلبة بواسطة</string>
+    <string name="size" translatable="false"> الحجم: XXL</string>
+    <string name="Qty" translatable="false"> الكمية:  </string>
+    <string name="move_to_wishlist" translatable="false">الانتقال إلى قائمة الرغبات</string>
+    <string name="sar" translatable="false">500 ريال سعودي</string>
+    <string name="sr" translatable="false">290 ريال سعودي</string>
+    <string name="percentage" translatable="false">30</string>
+    <string name="minus" translatable="false">-</string>
+    <string name="move" translatable="false">الانتقال إلى قائمة الرغبات</string>
+    <string name="name" translatable="false">اسم</string>
+    <string name="mobileno" translatable="false">رقم الهاتف المحمول</string>
+    <string name="pincode" translatable="false"> الرقم السري</string>
+    <string name="address" translatable="false">العنوان (رقم البيت ، الشارع ، المنطقة)</string>
+    <string name="town" translatable="false">محلية / بلدة</string>
+    <string name="city" translatable="false">مقاطعه المدينه</string>
+    <string name="state" translatable="false">حالة</string>
+    <string name="typeofaddress" translatable="false">نوع العنوان</string>
+    <string name="add_new_addrs" translatable="false">إضافة عنوان جديد</string>
+    <string name="edit_address" translatable="false">تعديل العنوان</string>
+    <string name="home" translatable="false">الصفحة الرئيسية</string>
+    <string name="office" translatable="false">مكتب / تجاري</string>
+    <string name="default_address" translatable="false">جعل هذا بلدي الافتراضي أديس</string>
+    <string name="cancel" translatable="false">إلغاء</string>
+    <string name="save" translatable="false">حفظ</string>
+
+    <string-array name="gender">
+        <item>الذكر</item>
+        <item>أنثى</item>
+    </string-array>
+
+    <string-array name="android_language">
+        <item>الإنجليزية</item>
+        <item>عربى</item>
+    </string-array>
+
+    <string name="your_last" translatable="false"> الرجاء إدخال الاسم الأخير</string>
+    <string name="gender" translatable="false">يرجى تحديد الجنس</string>
+    <string name="done" translatable="false">منجز</string>
+    <string name="edit" translatable="false">تصحيح </string>
+    <string name="qutyedit" translatable="false">تحرير الكمية</string>
+    <string name="update_success" translatable="false">تحديثات الملف الشخصي بنجاح</string>
+    <string name="adress" translatable="false">عنوان</string>
+    <string name="Pricing_Details" translatable="false">تفاصيل التسعير</string>
+    <string name="Oder_Total" translatable="false">اودير توتال</string>
+    <string name="Oldpassword" translatable="false">كلمة سر قديمةل</string>
+    <string name="Newpassword" translatable="false">كلمة سر جديدة</string>
+    <string name="confrmpassword" translatable="false">تأكيد كلمة المرور</string>
+    <string name="submit" translatable="false">تقديم</string>
+    <string name="category" translatable="false">الفئة</string>
+    <string name="wishlist" translatable="false">قائمة الرغبات</string>
+    <string name="cart" translatable="false">عربة التسوق</string>
+    <string name="profile" translatable="false">الملف الشخصي</string>
+    <string name="my_orders" translatable="false">طلباتي</string>
+    <string name="payment_option" translatable="false">خيار الدفع</string>
+    <string name="credit_debit" translatable="false">الائتمان / الخصم</string>
+    <string name="cash" translatable="false">السيولة النقدية</string>
+    <string name="change_address" translatable="false">تغيير العنوان</string>
+    <string name="pay" translatable="false">دفع</string>
+    <string name="select_size" translatable="false">أختر الحجم</string>
+    <string name="delivery_options" translatable="false">خيارات التسليم</string>
+    <string name="Enter_Pincode" translatable="false">أدخل الرمز السري</string>
+    <string name="add_to_Bag" translatable="false">أضف الى الحقيبة""</string>
+    <string name="sort" translatable="false">فرز</string>
+    <string name="best_sellers" translatable="false">أفضل البائعين</string>
+    <string name="price" translatable="false">السعر</string>
+    <string name="filter" translatable="false">منقي</string>
+    <string name="free_delivery" translatable="false">توصيل مجاني</string>
+    <string name="loading" translatable="false">جار التحميل...</string>
+    <string name="free_shipping" translatable="false">شحن مجاني على كل شيء</string>
+    <string name="options" translatable="false">خيارات</string>
+    <string name="aply_coupon" translatable="false">تطبيق القسيمة</string>
+    <string name="gift" translatable="false">هدية مجانية</string>
+    <string name="Permenent_address" translatable="false">العنوان الدائم</string>
+    <string name="location" translatable="false">موقعك</string>
+    <string name="cityy" translatable="false">مدينة</string>
+    <string name="delete" translatable="false">حذف</string>
+    <string name="orders" translatable="false">طلب</string>
+    <string name="adrs" translatable="false">عنوان</string>
+    <string name="logout" translatable="false">تسجيل خروج</string>
+    <string name="notification" translatable="false">تنبيه</string>
+    <string name="save_address" translatable="false">حفظ العنوان</string>
+    <string name="change_paswrd" translatable="false">تغيير كلمة المرور</string>
+    <string name="Change_your_profile" translatable="false">تغيير تفاصيل ملفك الشخصي وكلمة المرور</string>
+    <string name="language" translatable="false">لغة</string>
+    <string name="entermobileNo">أدخل</string>
+    <string name="sure_logout" translatable="false">هل تريد تسجيل الخروج</string>
+    <string name="alert" translatable="false">تنبيه</string>
+    <string name="yes" translatable="false">نعم</string>
+    <string name="no" translatable="false">لا</string>
+    <string name="guest_user" translatable="false">حساب زائر</string>
+    <string name="signin" translatable="false">تسجيل الدخول</string>
+    <string name="please" translatable="false">الرجاء تسجيل الدخول للمتابعة</string>
+    <string name="recommended_products" translatable="false">المنتجات الموصى بها</string>
+    <string name="category_infocus" translatable="false">الفئة في بؤرة</string>
+    <string name="brand_infocus" translatable="false">العلامة التجارية في بؤرة</string>
+    <string name="price_detail" translatable="false">سعر التفاصيل</string>
+    <string name="mobile">التليفون المحمول</string>
+    <string name="valid_number" translatable="false">من فضلك أدخل رقما صالحا</string>
+    <string name="no_products_available" translatable="false">لا توجد منتجات متاحة</string>
+    <string name="no_addresses_found" translatable="false">لا توجد عناوين</string>
+    <string name="please_state" translatable="false">يرجى اختيار الدولة أولا</string>
+    <string name="your_mobile" translatable="false">الرجاء إدخال رقم الهاتف النقال</string>
+    <string name="confirm_pasword" translatable="false">تأكيد كلمة المرور</string>
+    <string name="placeorder" translatable="false">مكان الامر</string>
+    <string name="forgot" translatable="false">هل نسيت كلمة المرور</string>
+    <string name="free" translatable="false">مجانا</string>
+    <string name="defalt" translatable="false">(الإفتراضي)</string>
+    <string name="don" translatable="false">منجز</string>
+    <string name="selct_language" translatable="false">اختار اللغة؟</string>
+    <string name="welcome" translatable="false">أهلا بك</string>
+    <string name="not_selected" translatable="false">لم تقم بتحديد العنوان الافتراضي</string>
+    <string name="select_address" translatable="false">اختر العنوان</string>
+
+    <string name="english" translatable="false">الإنجليزية</string>
+    <string name="alrdy_have_an_acnt" translatable="false">هل لديك حساب؟</string>
+    <string name="arabic" translatable="false">عربى</string>
+    <string name="deliver_to" translatable="false">يسلم إلى:</string>
+    <string name="order_total" translatable="false">الطلب الكلي</string>
+    <string name="free_shiping" translatable="false">شحن مجاني على كل شيء</string>
+    <string name="brands" translatable="false">العلامات التجارية</string>
+    <string name="categories" translatable="false">التصنيفات</string>
+    <string name="qty" translatable="false">الكمية</string>
+    <string name="cartlist" translatable="false">قائمة السلة</string>
+    <string name="remove" translatable="false">إزالة</string>
+    <string name="move_to_bag" translatable="false">الانتقال إلى حقيبة</string>
+    <string name="fill_your_address" translatable="false">ملء عنوانك</string>
+    <string name="check_your_order" translatable="false">تحقق من حالة طلبك</string>
+    <string name="manage_notification" translatable="false">إدارة الإخطار</string>
+
+    <string name="view_detail" translatable="false">عرض التفاصيل</string>
+    <string name="enter_onetime_pasword" translatable="false">أدخل كلمة المرور لمرة واحدة (OTP)</string>
+    <string name="faster_delivery" translatable="false">خيارات تسليم أسرع قد تكون متاحة</string>
+    <string name="add_to_wishlist" translatable="false">أضف إلى قائمة الامنيات</string>
+    <string name="one_time_password_has_sent" translatable="false">تم إرسال كلمة مرور (OTP) مرة واحدة إلى</string>
+    <string name="your_mobile_otp" translatable="false">هاتفك النقال</string>
+    <string name="please_enter_the_same" translatable="false">، الرجاء إدخال نفسه هنا لتسجيل الدخول.</string>
+    <string name="edit_or_change" translatable="false">تعديل / تغيير</string>
+    <string name="no_orders_found" translatable="false">لم يتم العثور على أية طلبات</string>
+    <string name="order_id" translatable="false">رقم التعريف الخاص بالطلب</string>
+    <string name="select_lang" translatable="false">اختار اللغة</string>
+    <string name="address_list" translatable="false">قائمة العناوين</string>
+    <string name="payment" translatable="false">دفع</string>
+    <string name="order_list" translatable="false">طلب بضاعة</string>
+    <string name="product_detail" translatable="false">تفاصيل المنتج</string>
+    <string name="notificationmanage" translatable="false">تفاصيل المنتج</string>
+    <string name="poduct_detail" translatable="false">تفاصيل المنتج</string>
+    <string name="product_code" translatable="false">كود المنتج</string>
+    <string name="product_description" translatable="false">وصف المنتج</string>
+    <string name="size_chart" translatable="false">حجم الرسم البياني</string>
+    <string name="similar_products" translatable="false">منتجات مماثلة</string>
+    <string name="wishempty" translatable="false">قائمة أمنيات فارغة</string>
+    <string name="cartempty" translatable="false">قائمة السلة فارغة</string>
+    <string name="checkorder" translatable="false">تحقق من حالة طلبك</string>
+    <string name="confrm_paswrd" translatable="false">تأكيد كلمة المرور</string>
+    <string name="fillAdres" translatable="false">ملء عنوانك</string>
+    <string name="orderz" translatable="false">طلب</string>
+    <string name="no_brands_available">لا توجد علامات تجارية متاحة</string>
+    <string name="faster_delivery_option" translatable="false">خيارات تسليم أسرع قد تكون متاحة</string>
+    <string name="no_filters" translatable="false">No Filtesr Found</string>
+    <string name="vip_login" translatable="false">تسجيل دخول VIP</string>
+    <string name="continues" translatable="false">استمر</string>
+    <string name="quantty">qty</string>
+    <string name="go_to_wish" translatable="false">اذهب الى قائمة الامنيات</string>
+    <string name="go_to_cart" translatable="false">اذهب الى العربة</string>
+    <string name="msg_token_fmt">msg</string>
+    <string name="txt_done" translatable="false">منجز</string>
+    <string name="txt_clear" translatable="false">واضح</string>
+    <string name="sure_remove" translatable="false">هل أنت متأكد من أنك تريد إزالة؟</string>
+</resources>

@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/address_firstCl"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/colorWhite">
+        <RadioGroup
+            android:id="@+id/radio_group_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@+id/myaddress_name"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/myaddress_name"
+            >
+            <RadioButton
+                android:id="@+id/selectaddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+
+
+                android:textSize="10sp" />
+        </RadioGroup>
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/myaddress_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Beena"
+            android:layout_marginStart="5dp"
+            android:textColor="@color/colorBlack"
+            android:gravity="center"
+            android:singleLine="true"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/radio_group_id"
+            app:layout_constraintTop_toTopOf="parent"
+
+            android:layout_marginTop="17.5dp"
+            android:textSize="12sp"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/address_detail_CL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/myaddress_name"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/mobile_tv"
+            android:layout_marginStart="30.5dp"
+            >
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/mypermenent_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Module : 12"
+                android:textSize="12sp"
+                android:singleLine="true"
+
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintBottom_toTopOf="@+id/mylocation"
+                />
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/mylocation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Module : 12"
+                android:textSize="12sp"
+                app:layout_constraintTop_toBottomOf="@+id/mypermenent_address"
+                app:layout_constraintBottom_toTopOf="@+id/mycity"
+                android:singleLine="true"
+
+                app:layout_constraintStart_toStartOf="parent"
+                />
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/mycity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Module : 12"
+                android:textSize="12sp"
+                app:layout_constraintTop_toBottomOf="@+id/mylocation"
+                app:layout_constraintBottom_toTopOf="@+id/mystate"
+                android:singleLine="true"
+
+                app:layout_constraintStart_toStartOf="parent"
+                />
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/mystate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Module : 12"
+                android:textSize="12sp"
+                app:layout_constraintTop_toBottomOf="@+id/mycity"
+                android:singleLine="true"
+
+                app:layout_constraintStart_toStartOf="parent"
+                />
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/comaa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=","
+                android:textSize="12sp"
+                android:layout_marginStart="1dp"
+                app:layout_constraintStart_toEndOf="@+id/mystate"
+                app:layout_constraintTop_toBottomOf="@+id/mycity"
+                android:singleLine="true"
+
+
+                />
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/mypincode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Module : 12"
+                android:textSize="12sp"
+                android:layout_marginStart="6dp"
+                app:layout_constraintStart_toEndOf="@+id/comaa"
+                app:layout_constraintTop_toBottomOf="@+id/mycity"
+                android:singleLine="true"
+
+
+                />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/mobile_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mobile"
+            android:textSize="12sp"
+
+            app:layout_constraintTop_toBottomOf="@+id/address_detail_CL"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/lineNo1"
+
+
+            android:layout_marginStart="30.5dp"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/semiid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=":"
+            android:textSize="12sp"
+
+            app:layout_constraintTop_toTopOf="@+id/mobile_tv"
+            app:layout_constraintStart_toEndOf="@+id/mobile_tv"
+            app:layout_constraintBottom_toBottomOf="@+id/mobile_tv"
+
+
+            android:layout_marginStart="5dp"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/myphone_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1234567890"
+            android:textSize="12sp"
+            android:singleLine="true"
+            android:inputType="number"
+            android:maxLength="12"
+
+            app:layout_constraintTop_toBottomOf="@+id/address_detail_CL"
+            app:layout_constraintStart_toEndOf="@+id/semiid"
+
+            app:layout_constraintTop_toTopOf="@+id/mobile_tv"
+            app:layout_constraintBottom_toBottomOf="@+id/mobile_tv"
+            android:layout_marginEnd="30dp"
+
+            android:layout_marginStart="5dp"
+            />
+        <View
+            android:id="@+id/lineNo1"
+            android:layout_width="305dp"
+            android:layout_height="1dp"
+            android:background="@color/backgroundcolor"
+            app:layout_constraintTop_toBottomOf="@+id/myphone_number"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="13.5dp"
+            android:layout_marginStart="17.5dp"
+            android:layout_marginEnd="17.5dp"
+            />
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_marginBottom="15dp"
+            app:layout_constraintTop_toBottomOf="@+id/lineNo1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/editAddressBaseCL"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:visibility="visible"
+                android:layout_weight="1"
+                android:background="@color/colorWhite"
+                android:layout_marginEnd="0.5dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                >
+
+
+                <androidx.appcompat.widget.AppCompatTextView
+
+                    android:id="@+id/address_edit"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_width="wrap_content"
+                    android:text="@string/edit_or_change"
+                    android:gravity="center"
+                    android:textColor="@color/colorPink"
+                    android:layout_marginTop="10dp"
+                    android:textSize="11sp"
+                    android:layout_marginBottom="5dp"
+
+                    android:layout_height="wrap_content"/>
+
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="0"
+                app:layout_constraintStart_toEndOf="@id/editAddressBaseCL"
+                app:layout_constraintEnd_toStartOf="@+id/addNewAddressCL"
+
+                >
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/backgroundcolor" />
+
+            </LinearLayout>
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/address_delete"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:visibility="visible"
+                android:layout_weight="1"
+                app:layout_constraintTop_toTopOf="@+id/editAddressBaseCL"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="@+id/editAddressBaseCL">
+
+
+                <androidx.appcompat.widget.AppCompatTextView
+
+                    android:id="@+id/delete_Tv"
+                    app:layout_constraintEnd_toEndOf="parent"
+
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_marginBottom="5dp"
+                    android:layout_width="wrap_content"
+                    android:text="@string/delete"
+                    android:layout_marginTop="10dp"
+                    android:textSize="11sp"
+                    android:textColor="@color/colorPink"
+                    android:layout_height="wrap_content"
+
+                    />
+
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+
+
+
+
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

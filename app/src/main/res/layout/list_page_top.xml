@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+android:background="@drawable/background_white"
+
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/filer_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+    >
+
+<androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/sort_CL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="21.5dp"
+        android:foreground="?android:attr/selectableItemBackground"
+     >
+    <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/sort_TV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:text="SORT"
+            android:visibility="invisible"
+            android:textColor="@color/colorBlack"
+            android:textSize="11sp"
+
+    />
+    <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/sort_image_id"
+            android:layout_width="wrap_content"
+            android:visibility="gone"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@+id/sort_TV"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginStart="10dp"
+            android:src="@drawable/arrow_up"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+            android:foreground="?android:attr/selectableItemBackground"
+            android:id="@+id/best_sellers_TV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/sort_CL"
+            android:text=" BEST SELLERS"
+            android:textSize="11sp"
+            android:visibility="invisible"
+            android:layout_marginStart="30dp"
+            android:textColor="@color/colorBlack"
+    />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/price_CL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            android:foreground="?android:attr/selectableItemBackground"
+            app:layout_constraintStart_toEndOf="@+id/best_sellers_TV"
+            android:layout_marginStart="30dp"
+    >
+        <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/price_TV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:text="PRICE"
+                android:textSize="11sp"
+                android:visibility="invisible"
+                android:textColor="@color/colorBlack"
+
+        />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/price_up_IM_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="2dp"
+            android:src="@drawable/arrow_up"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/price_TV"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/price_down_IM_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toEndOf="@+id/price_TV"
+                android:visibility="invisible"
+                app:layout_constraintTop_toBottomOf="@id/price_up_IM_id"
+                android:layout_marginTop="2dp"
+                android:src="@drawable/arrow_down"
+                android:layout_marginStart="10dp"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    />
+    <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/filter_icon_id"
+            android:layout_width="wrap_content"
+            android:layout_height="14dp"
+            app:layout_constraintStart_toEndOf="@+id/price_CL"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="2dp"
+            android:layout_marginStart="30dp"
+
+            android:foreground="?android:attr/selectableItemBackground"
+            android:src="@drawable/filter_icon"
+        />
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/filter_TV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/filter_icon_id"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:layout_marginStart="10dp"
+            android:text="FILTER"
+            android:visibility="gone"
+            android:textSize="11sp"
+
+            android:textColor="@color/colorBlack"
+    />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

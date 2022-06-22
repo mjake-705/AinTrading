@@ -1,0 +1,225 @@
+<resources>
+    <string name="app_name" translatable="false">Ain Trading</string>
+    <string name="sign_up_fragment" translatable="false">SIGN UP Fragment</string>
+    <string name="sign_in_fragment" translatable="false">SIGN IN Fragment</string>
+    <string name="facebk" translatable="false">FACEBOOK</string>
+    <string name="google" translatable="false">GOOGLE PLUS</string>
+    <string name="login_via_emil" translatable="false">Or login Via e mail</string>
+    <string name="email" translatable="false">EMAIL</string>
+    <string name="password" translatable="false">PASSWORD</string>
+    <string name="forgot_password" translatable="false">Forgot Password?</string>
+    <string name="sign_in" translatable="false">SIGN IN</string>
+    <string name="Dont_have_an_account" translatable="false">Don\'t have an account? </string>
+    <string name="sign_up" translatable="false">SIGN UP</string>
+    <string name="first_name" translatable="false">FIRST NAME</string>
+    <string name="last_name" translatable="false">LAST NAME</string>
+    <string name="or" translatable="false">or</string>
+    <string name="emil" translatable="false">E-MAIL</string>
+    <string name="server_error" translatable="false">Server error occured. Please try again</string>
+    <string name="pasword" translatable="false">PASSWORD</string>
+    <string name="english" translatable="false">English</string>
+    <string name="arabic" translatable="false">Arabic</string>
+    <string name="confrm_paswrd" translatable="false">CONFIRM PASSWORD</string>
+
+    <string name="alrdy_have_an_acnt" translatable="false">Already have an account?</string>
+    <string name="your_first" translatable="false">Please enter your first name</string>
+    <string name="your_email" translatable="false">Please enter your email</string>
+    <string name="your_password" translatable="false">Please enter your password</string>
+    <string name="password_error" translatable="false">Password must contain minimum 6 char/one capital letter/one\"
++\n" +
+" \" number/one special character"
+</string>
+    <string name="confirm_password" translatable="false">Please confirm your password</string>
+    <string name="valid_email" translatable="false">Please enter a valid email</string>
+    <string name="password_not_matches" translatable="false">password not matches confirm password</string>
+
+
+    <string name="ok" translatable="false">OK</string>
+    <string name="network_connection_issue" translatable="false">Looks like there is no network connection</string>
+
+
+    <string name="bag" translatable="false">Bag ------------------</string>
+    <string name="Address" translatable="false">Address ---------------</string>
+    <string name="Payment" translatable="false">Payment</string>
+    <string name="offers" translatable="false">Offers</string>
+    <string name="ad_to_bag" translatable="false">ADD TO BAG</string>
+    <string name="placeorder" translatable="false">PLACE ORDER</string>
+    <string name="show_more" translatable="false">Show More</string>
+
+    <string name="bag_total" translatable="false">Bag Total</string>
+    <string name="bag_discount" translatable="false">Bag Discount</string>
+    <string name="tax" translatable="false">Tax</string>
+    <string name="coupn_discount" translatable="false">Coupon Discount</string>
+    <string name="ordr_total" translatable="false">Order Total</string>
+    <string name="delivery_charge" translatable="false"> Delivery Charge</string>
+    <string name="total" translatable="false"> Total</string>
+
+    <string name="yo_yo_honey" translatable="false"> Yo Yo Honey Sing Photoshoot in</string>
+    <string name="solid" translatable="false"> Solid by:Prolegue</string>
+    <string name="size" translatable="false"> Size:XXL</string>
+    <string name="Qty" translatable="false"> Qty :</string>
+    <string name="move_to_wishlist" translatable="false">MOVE TO WISHLIST</string>
+
+    <string name="sar" translatable="false">500 SAR</string>
+    <string name="sr" translatable="false">290 SAR</string>
+    <string name="percentage" translatable="false">30</string>
+    <string name="minus" translatable="false">-</string>
+    <string name="move" translatable="false">MOVE TO WISHLIST</string>
+
+
+    <string name="name" translatable="false">Name</string>
+    <string name="mobileno" translatable="false">Mobile Number</string>
+    <string name="pincode" translatable="false">PIN Code</string>
+    <string name="address" translatable="false">Address (House No, Street, Area)</string>
+    <string name="town" translatable="false">Locality / Town</string>
+    <string name="city" translatable="false">City / District</string>
+    <string name="state" translatable="false">State</string>
+    <string name="typeofaddress" translatable="false">Type of Address</string>
+    <string name="add_new_addrs" translatable="false">ADD NEW ADDRESS</string>
+    <string name="edit_address" translatable="false">EDIT ADDRESS</string>
+    <string name="home" translatable="false">Home</string>
+    <string name="office" translatable="false">Office / Commercial</string>
+    <string name="default_address" translatable="false">Make this my default Addess</string>
+    <string name="cancel" translatable="false">CANCEL</string>
+    <string name="save" translatable="false">SAVE</string>
+
+    <string-array name="gender">
+        <item>male</item>
+        <item>female</item>
+    </string-array>
+
+    <string-array name="android_language">
+        <item>English</item>
+        <item>Arabic</item>
+    </string-array>
+    <string name="your_last" translatable="false">Please enter last name</string>
+    <string name="gender" translatable="false">Please Select Gender</string>
+    <string name="done" translatable="false">Done</string>
+    <string name="edit" translatable="false">Edit</string>
+    <string name="qutyedit" translatable="false">Quantity Edit</string>
+    <string name="update_success" translatable="false">Profile updates successfully</string>
+    <string name="adress" translatable="false">Address</string>
+    <string name="Pricing_Details" translatable="false">Pricing Details</string>
+    <string name="Oder_Total" translatable="false">Oder Total</string>
+    <string name="Oldpassword" translatable="false">OLDPASSWORD</string>
+    <string name="Newpassword" translatable="false">NEWPASSWORD</string>
+    <string name="confrmpassword" translatable="false">Confirmpassword</string>
+    <string name="submit" translatable="false">SUBMIT</string>
+    <string name="category" translatable="false">Category</string>
+    <string name="wishlist" translatable="false">Wishlist</string>
+    <string name="cart" translatable="false">Cart</string>
+    <string name="profile" translatable="false">Profile</string>
+    <string name="my_orders" translatable="false">MY ORDERS</string>
+    <string name="payment_option" translatable="false">Payment Option</string>
+    <string name="credit_debit" translatable="false">CREDIT/DEBIT</string>
+    <string name="cash" translatable="false">CASH</string>
+    <string name="change_address" translatable="false">Change Address</string>
+    <string name="pay" translatable="false">Pay</string>
+    <string name="select_size" translatable="false">Select Size</string>
+    <string name="delivery_options" translatable="false">DELIVERY OPTIONS</string>
+    <string name="Enter_Pincode" translatable="false">Enter Pincode</string>
+    <string name="add_to_Bag" translatable="false">ADD to Bag</string>
+    <string name="sort" translatable="false">SORT</string>
+    <string name="best_sellers" translatable="false">BEST SELLERS</string>
+    <string name="price" translatable="false">PRICE</string>
+    <string name="filter" translatable="false">FILTER</string>
+    <string name="free_delivery" translatable="false">Free Delivery</string>
+    <string name="loading" translatable="false">Loading...</string>
+    <string name="free_shipping" translatable="false">FREE SHIPPING ON EVERYTHING</string>
+    <string name="options" translatable="false">OPTIONS</string>
+    <string name="aply_coupon" translatable="false">Apply Coupon</string>
+    <string name="gift" translatable="false">gift</string>
+    <string name="Permenent_address" translatable="false">Permenent Address</string>
+    <string name="location" translatable="false">Location</string>
+    <string name="cityy" translatable="false">City</string>
+    <string name="delete" translatable="false">Delete</string>
+    <string name="orders" translatable="false">Orders</string>
+    <string name="adrs" translatable="false">Address</string>
+    <string name="logout" translatable="false">LOGOUT</string>
+    <string name="notification" translatable="false">Notification</string>
+    <string name="notificationmanage" translatable="false">Manage notification</string>
+    <string name="forgot" translatable="false">Forgot Password</string>
+    <string name="save_address" translatable="false">Save Address</string>
+    <string name="change_paswrd" translatable="false">Change Password</string>
+    <string name="Change_your_profile" translatable="false">Change your profile details and password</string>
+    <string name="fillAdres" translatable="false">Fill in your address</string>
+    <string name="language" translatable="false">Language</string>
+    <string name="entermobileNo" translatable="false">enter</string>
+    <string name="checkorder" translatable="false">Check your  order status</string>
+    <string name="sure_logout" translatable="false">Are you sure you want to logout?</string>
+    <string name="alert" translatable="false">Alert</string>
+    <string name="yes" translatable="false">YES</string>
+    <string name="no" translatable="false">NO</string>
+    <string name="deliver_to" translatable="false">Deliver To:</string>
+    <string name="guest_user" translatable="false">Guest User</string>
+    <string name="signin" translatable="false">SIGNIN</string>
+    <string name="category_infocus" translatable="false">CATEGORY IN FOCUS"</string>
+    <string name="brand_infocus" translatable="false">BRAND IN FOCUS</string>
+    <string name="please" translatable="false">Please Log in to continue</string>
+    <string name="recommended_products" translatable="false">RECOMMENDED PRODUCTS</string>
+    <string name="price_detail" translatable="false">PRICE DETAIL </string>
+    <string name="mobile">MOBILE</string>
+    <string name="no_products_available" translatable="false">No Products Available</string>
+    <string name="no_addresses_found" translatable="false">No addresses found</string>
+    <string name="please_state" translatable="false">Please select state first</string>
+    <string name="your_mobile" translatable="false">Please enter a mobile number</string>
+    <string name="valid_number" translatable="false">Please enter a valid number</string>
+    <string name="confirm_pasword" translatable="false">CONFIRM PASSWORD</string>
+    <string name="cartempty" translatable="false">CART LIST EMPTY</string>
+    <string name="wishempty" translatable="false">WISHLIST EMPTY</string>
+    <string name="order_total" translatable="false">Order Total</string>
+    <string name="free" translatable="false">FREE</string>
+    <string name="defalt" translatable="false">(Default)</string>
+    <string name="don" translatable="false">Done</string>
+    <string name="selct_language" translatable="false">Select Language?</string>
+    <string name="welcome" translatable="false">WELCOME</string>
+    <string name="not_selected" translatable="false">you have not selected the default address</string>
+    <string name="select_address" translatable="false">Select Address</string>
+
+    <string name="poduct_detail" translatable="false">ProductDetail</string>
+    <string name="size_chart" translatable="false">SIZE CHART</string>
+    <string name="product_code" translatable="false">Product Code</string>
+    <string name="product_description" translatable="false">PRODUCT DESCRIPTION</string>
+    <string name="similar_products" translatable="false">Similar Products</string>
+    <string name="free_shiping" translatable="false">FREE SHIPPING ON EVERYTHING</string>
+    <string name="brands" translatable="false">BRANDS</string>
+    <string name="categories" translatable="false">CATEGORIES</string>
+    <string name="qty" translatable="false">Qty</string>
+    <string name="cartlist" translatable="false">CARTLIST</string>
+    <string name="remove" translatable="false">Remove</string>
+    <string name="move_to_bag" translatable="false">Move to Bag</string>
+    <string name="fill_your_address" translatable="false">Fill in your address</string>
+    <string name="check_your_order" translatable="false">Check your order status</string>
+    <string name="manage_notification" translatable="false">Manage notification</string>
+
+    <string name="view_detail" translatable="false">(View Details)</string>
+    <string name="enter_onetime_pasword" translatable="false">Enter one time Password (OTP)</string>
+    <string name="faster_delivery" translatable="false">Faster Delivery Options may be available</string>
+    <string name="add_to_wishlist" translatable="false">ADD to Wishlist</string>
+    <string name="one_time_password_has_sent" translatable="false">One time Password(OTP) has been sent to</string>
+    <string name="your_mobile_otp" translatable="false">your mobile</string>
+    <string name="please_enter_the_same" translatable="false">, please enter the same here to login.</string>
+    <string name="edit_or_change" translatable="false">Edit/Change</string>
+    <string name="no_orders_found" translatable="false">No Orders Found</string>
+    <string name="order_id" translatable="false">Order Id</string>
+    <string name="select_lang" translatable="false">Select Language</string>
+    <string name="address_list" translatable="false">Address List</string>
+    <string name="payment" translatable="false">Payment</string>
+    <string name="order_list" translatable="false">Order Items</string>
+    <string name="product_detail" translatable="false">Product Detail</string>
+    <string name="orderz" translatable="false">Orders</string>
+    <string name="no_brands_available" translatable="false">No Brands Available</string>
+    <string name="faster_delivery_option" translatable="false">Faster Delivery Options may be available</string>
+    <string name="no_filters" translatable="false">No Filtesr Found</string>
+    <string name="vip_login" translatable="false">VIP  Login</string>
+    <string name="continues" translatable="false">Continue</string>
+    <string name="quantty" translatable="false">qty</string>
+    <string name="helo" translatable="false">Hello ,</string>
+    <string name="go_to_wish" translatable="false">Go To WishList</string>
+    <string name="go_to_cart" translatable="false">Go To Cart</string>
+    <string name="msg_token_fmt">msg</string>
+    <string name="txt_done" translatable="false">Done</string>
+    <string name="txt_clear" translatable="false">Clear</string>
+    <string name="sure_remove" translatable="false">Are you sure you want to remove?</string>
+
+</resources>

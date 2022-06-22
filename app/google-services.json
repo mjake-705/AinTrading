@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "742997027932",
+    "firebase_url": "https://aintrading.firebaseio.com",
+    "project_id": "aintrading",
+    "storage_bucket": "aintrading.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:742997027932:android:20d0135f0a6756a0e24a99",
+        "android_client_info": {
+          "package_name": "com.ain.trading"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "742997027932-v6igm60076hg4tohtj90eleba0tsmm72.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ain.trading",
+            "certificate_hash": "0079c74d9aa11bc9bcf3710110f261f44eb73883"
+          }
+        },
+        {
+          "client_id": "742997027932-395gsaobbd4ku31d543eddunkadu1dju.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB1LRl45ZEvQgW0fD_vMk4mrXPAf2vLDkQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "742997027932-395gsaobbd4ku31d543eddunkadu1dju.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

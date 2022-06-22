@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+
+    <!-- TODO: Update blank fragment layout -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:id="@+id/top_Cl"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp"
+        >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="0dp"
+            android:id="@+id/first_Cl"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:visibility="gone"
+            android:background="@drawable/circle"
+            app:layout_constraintEnd_toStartOf="@+id/second_Cl"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/fb_id"
+                android:layout_width="0dp"
+                android:layout_marginStart="10dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:src="@drawable/fb"
+                app:layout_constraintEnd_toStartOf="@+id/fb_txt_id"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"></androidx.appcompat.widget.AppCompatImageView>
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/fb_txt_id"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/facebk"
+                android:textStyle="bold"
+                android:textSize="8dp"
+                android:layout_marginStart="30dp"
+                app:layout_constraintStart_toEndOf="@+id/fb_id"
+                app:layout_constraintTop_toTopOf="@+id/fb_id"
+                app:layout_constraintBottom_toBottomOf="@+id/fb_id"></androidx.appcompat.widget.AppCompatTextView>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/second_Cl"
+            android:layout_width="0dp"
+            android:layout_margin="10dp"
+            android:visibility="gone"
+            android:background="@drawable/circle"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/first_Cl"
+            android:layout_height="40dp"
+            >
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/google_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:src="@drawable/googlepls"
+                app:layout_constraintEnd_toStartOf="@+id/google_txt_id"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"></androidx.appcompat.widget.AppCompatImageView>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/google_txt_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="10sp"
+                android:text="@string/google"
+                android:layout_marginStart="10dp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@+id/google_id"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="@id/google_id"
+                ></androidx.appcompat.widget.AppCompatTextView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/login_via_txt_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="@string/login_via_emil"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:visibility="gone"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/first_Cl"></androidx.appcompat.widget.AppCompatTextView>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/emil_textinpt_layout_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="50dp"
+            app:layout_constraintTop_toBottomOf="@id/login_via_txt_id">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/emil_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/emil"
+                android:singleLine="true"
+                android:textSize="12sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/login_via_txt_id"
+                ></com.google.android.material.textfield.TextInputEditText>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="50dp"
+            android:id="@+id/paswrd_txtinput_layout_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:passwordToggleEnabled="true"
+
+            android:layout_marginTop="5dp"
+            app:layout_constraintTop_toBottomOf="@+id/emil_textinpt_layout_id">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/password_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:hint="@string/password"
+                android:password="true"
+                android:singleLine="true"
+                ></com.google.android.material.textfield.TextInputEditText>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/forgot_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/forgot_password"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="50dp"
+            android:textSize="12sp"
+            app:layout_constraintTop_toBottomOf="@+id/paswrd_txtinput_layout_id"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:ignore="NotSibling"></androidx.appcompat.widget.AppCompatTextView>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/sign_buton_id"
+            android:layout_width="match_parent"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="50dp"
+            android:layout_height="40dp"
+            app:layout_constraintTop_toBottomOf="@id/forgot_id"
+            android:layout_marginTop="15dp"
+            android:text="@string/sign_in"
+            android:textColor="#ffffff"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:background="#FC578B"
+            ></androidx.appcompat.widget.AppCompatTextView>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/guest_user_Tv"
+            android:layout_width="match_parent"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="50dp"
+            android:layout_height="40dp"
+            app:layout_constraintTop_toBottomOf="@id/sign_buton_id"
+            android:layout_marginTop="15dp"
+            android:text="@string/guest_user"
+            android:textColor="@color/colorBlack"
+            android:textSize="12sp"
+            android:gravity="center"
+            ></androidx.appcompat.widget.AppCompatTextView>
+
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="300dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:src="@drawable/bg"
+            app:layout_constraintTop_toBottomOf="@+id/guest_user_Tv"
+            app:layout_constraintBottom_toBottomOf="parent"
+            />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</ScrollView>

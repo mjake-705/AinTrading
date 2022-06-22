@@ -1,0 +1,592 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="@color/backgroundcolor"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/cartToolbar"
+        layout="@layout/app_bar_center_title"
+        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cartToolbar"
+        >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/topcartlistCL"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/top_constraint"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <LinearLayout
+                    android:id="@+id/top_LL"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="@color/colorWhite"
+                    android:orientation="horizontal"
+                    android:visibility="gone"
+                    android:weightSum="3"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/bag_id"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+
+                        android:text="@string/bag"></androidx.appcompat.widget.AppCompatTextView>
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/address_id"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/Address"
+
+                        ></androidx.appcompat.widget.AppCompatTextView>
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/payment_id"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/Payment"></androidx.appcompat.widget.AppCompatTextView>
+                </LinearLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/secnd_cl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                app:layout_constraintTop_toBottomOf="@+id/top_constraint">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/img_id"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/pinktrack"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/freeshop_id"
+                    app:layout_constraintTop_toTopOf="parent"></androidx.appcompat.widget.AppCompatImageView>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/freeshop_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/free_shipping"
+                    android:textColor="@color/colorPink"
+                    android:textSize="11sp"
+                    android:textStyle="italic"
+                    android:fontFamily="@font/lato_medium"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/img_id"
+                    app:layout_constraintBottom_toBottomOf="@+id/img_id"></androidx.appcompat.widget.AppCompatTextView>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/third_cl"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_marginStart="20dp"
+                android:visibility="gone"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/background_curve"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/secnd_cl">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/offers"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/offers"
+
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:fontFamily="@font/latoregular"
+                    android:textColor="@color/litegreen"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+
+                    ></androidx.appcompat.widget.AppCompatTextView>
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/squre"
+                    android:layout_width="6dp"
+                    android:layout_height="6dp"
+
+                    android:layout_marginTop="13dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/squareshape"
+                    app:layout_constraintStart_toStartOf="@+id/offers"
+                    app:layout_constraintTop_toBottomOf="@+id/offers">
+
+                </androidx.appcompat.widget.AppCompatImageView>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/ten_dicount_id"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:maxLines="2"
+                    android:ellipsize="end"
+                    android:gravity="start"
+                    android:text="10% Instant Discount on Federal Bank Debit Cards on a minimum"
+              android:layout_marginStart="15dp"
+                    android:textSize="11sp"
+                    android:layout_marginTop="9dp"
+                  android:layout_marginEnd="20dp"
+
+                    app:layout_constraintStart_toEndOf="@+id/squre"
+                   app:layout_constraintTop_toBottomOf="@+id/offers"
+                   app:layout_constraintEnd_toEndOf="parent">
+
+                </androidx.appcompat.widget.AppCompatTextView>
+
+
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/shw_id"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                   android:layout_marginTop="10dp"
+                    android:text="@string/show_more"
+                    android:textColor="@color/blue"
+                    android:textSize="10.5sp"
+                   app:layout_constraintBottom_toBottomOf="parent"
+                    android:layout_marginBottom="20dp"
+
+                    app:layout_constraintStart_toStartOf="@+id/offers"
+                    app:layout_constraintTop_toBottomOf="@id/ten_dicount_id"></androidx.appcompat.widget.AppCompatTextView>
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/shw_qty_id"
+                    android:layout_width="7dp"
+                    android:layout_height="7dp"
+                  android:layout_marginStart="5dp"
+                    android:layout_marginTop="2dp"
+
+                    android:background="@drawable/dwnarw"
+                    app:layout_constraintTop_toTopOf="@+id/shw_id"
+                    app:layout_constraintBottom_toBottomOf="@+id/shw_id"
+                    app:layout_constraintStart_toEndOf="@+id/shw_id"
+                   ></androidx.appcompat.widget.AppCompatImageView>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/cartrecycle_id"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginBottom="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/third_cl"
+
+                ></androidx.recyclerview.widget.RecyclerView>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/option_id"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/options"
+                android:textColor="@color/colorBlack"
+                android:textSize="13sp"
+                android:visibility="invisible"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cartrecycle_id"></androidx.appcompat.widget.AppCompatTextView>
+
+         <!--   <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/fourth_cl_id"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="8dp"
+android:visibility="invisible"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/background_curve"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.476"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/option_id">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/aply_img_id"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+
+                    android:background="@drawable/aply_img"
+                      android:layout_marginTop="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginStart="20dp"
+                    app:layout_constraintBottom_toTopOf="@id/option_view_id"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"></androidx.appcompat.widget.AppCompatImageView>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/apply_id"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="@string/aply_coupon"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="13sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/aply_img_id"
+                    app:layout_constraintStart_toEndOf="@+id/aply_img_id"
+
+                    app:layout_constraintTop_toTopOf="@+id/aply_img_id"
+
+                    ></androidx.appcompat.widget.AppCompatTextView>
+
+                <View
+                    android:id="@+id/option_view_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.1dp"
+                    android:layout_margin="10dp"
+                    android:background="@color/colorBlack"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/apply_id" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/gift_img_id"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                   android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/gift_icn"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/option_view_id"></androidx.appcompat.widget.AppCompatImageView>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/gift_id"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="@string/gift"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="13sp"
+
+                    app:layout_constraintBottom_toBottomOf="@+id/gift_img_id"
+                    app:layout_constraintStart_toEndOf="@id/gift_img_id"
+                    app:layout_constraintTop_toTopOf="@+id/gift_img_id"></androidx.appcompat.widget.AppCompatTextView>
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/img_arow_id"
+                    android:layout_width="7dp"
+                    android:layout_height="10dp"
+                    android:layout_margin="10dp"
+                    android:layout_marginEnd="30dp"
+                    android:src="@drawable/ic_arrow_right"
+                    app:layout_constraintBottom_toBottomOf="@+id/apply_id"
+                    app:layout_constraintEnd_toEndOf="parent"
+
+                    app:layout_constraintTop_toTopOf="@+id/apply_id"></androidx.appcompat.widget.AppCompatImageView>
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/arrow_id"
+                    android:layout_width="7dp"
+                    android:layout_height="10dp"
+                    android:layout_margin="10dp"
+                    android:layout_marginEnd="30dp"
+                    android:src="@drawable/ic_arrow_right"
+                    app:layout_constraintBottom_toBottomOf="@+id/gift_id"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/gift_id"
+
+                    ></androidx.appcompat.widget.AppCompatImageView>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/price_detail_id"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/price_detail"
+                android:textColor="@color/colorBlack"
+                android:textSize="13sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/option_id"></androidx.appcompat.widget.AppCompatTextView>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/fivth_cl"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/background_curve"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/price_detail_id">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/bag_total_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/bag_total"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"></androidx.appcompat.widget.AppCompatTextView>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/bag_total_prize"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text=""
+                    android:layout_marginEnd="20dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/bag_total_id"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/bag_total_id"></androidx.appcompat.widget.AppCompatTextView>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/bag_dicount_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="@string/bag_discount"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/bag_total_id"></androidx.appcompat.widget.AppCompatTextView>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/bag_discount_prize"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text=""
+                    android:layout_marginEnd="20dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/bag_dicount_id"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/bag_dicount_id"></androidx.appcompat.widget.AppCompatTextView>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tax_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="@string/tax"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/bag_dicount_id"></androidx.appcompat.widget.AppCompatTextView>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tax_prize"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text=""
+                    android:layout_marginEnd="20dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/tax_id"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/tax_id"></androidx.appcompat.widget.AppCompatTextView>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/coupon_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="@string/coupn_discount"
+                    android:visibility="gone"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tax_id"></androidx.appcompat.widget.AppCompatTextView>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/coupon_prize_id"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text=""
+                    android:visibility="gone"
+                    android:layout_marginEnd="20dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/coupon_id"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/coupon_id" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/order_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="@string/ordr_total"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tax_id" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/order_prize_id"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text=""
+                    android:layout_marginEnd="20dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/order_id"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/order_id" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/delivery_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="10dp"
+
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="@string/delivery_charge"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/order_id"
+                    app:layout_constraintBottom_toTopOf="@+id/arrow_total_id"/>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/delivery_prize_id"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text=""
+                    android:layout_marginEnd="20dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/delivery_id"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/delivery_id" />
+
+                <View
+                    android:id="@+id/arrow_total_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_margin="5dp"
+                    android:background="@color/colorPink"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/delivery_id" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/total"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/total"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:textColor="@color/colorBlack"
+                  app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/arrow_total_id" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/total_prize_id"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="1000.00"
+                    android:layout_marginEnd="20dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/total"
+                    app:layout_constraintBottom_toBottomOf="@+id/total"
+                    app:layout_constraintTop_toBottomOf="@id/arrow_total_id" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/addtocartTV"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="50dp"
+                android:background="@color/colorPink"
+                android:gravity="center"
+                android:text="@string/placeorder"
+                android:textColor="@color/colorWhite"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/fivth_cl"
+                />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/cartemptyIV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:src="@drawable/cartempty"
+        android:visibility="gone"/>
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/cartemtyTV"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@+id/cartemptyIV"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="@string/cartempty"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

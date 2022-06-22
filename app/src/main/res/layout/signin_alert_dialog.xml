@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="250dp"
+    android:layout_height="250dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/white_rect"
+    android:paddingBottom="10dp">
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/iv_signin"
+        android:layout_width="match_parent"
+        android:src="@drawable/login_not"
+        android:layout_height="100dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="10dp"
+        />
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/titleTV"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        app:layout_constraintTop_toBottomOf="@id/iv_signin"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:fontFamily="@font/robo_medium"
+        android:layout_alignBottom="@+id/iv_signin"
+        android:gravity="center_vertical"
+        android:paddingStart="20dp"
+        android:textSize="20sp"
+        tools:text="@string/alert"
+        android:textColor="@color/colorBlack"
+        android:letterSpacing="0.03"/>
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/messageTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/titleTV"
+        android:fontFamily="@font/latoregular"
+        android:paddingBottom="10dp"
+        android:paddingStart="20dp"
+        android:paddingEnd="10dp"
+        android:paddingTop="5dp"
+        app:layout_constraintTop_toBottomOf="@+id/titleTV"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        android:text="@string/sure_logout"
+        android:layout_marginEnd="5dp"
+        android:textColor="@color/colorBlack"
+        android:textSize="16sp"
+        android:lineSpacingMultiplier="1.1"
+        android:letterSpacing="0.02"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/messageTV"
+        android:weightSum="2">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/positiveTV"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/messageTV"
+        android:layout_marginEnd="10dp"
+        android:fontFamily="@font/robo_medium"
+        android:padding="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/messageTV"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="@string/yes"
+        android:textStyle="bold"
+        android:textAllCaps="true"
+        android:gravity="center"
+
+        android:layout_gravity="center"
+
+        android:textColor="@color/colorPink"
+        android:textSize="15sp"
+        android:layout_weight="1"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/negativeTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/messageTV"
+        android:layout_marginEnd="10dp"
+        android:layout_toStartOf="@+id/positiveTV"
+        android:fontFamily="@font/robo_medium"
+        android:padding="10dp"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@+id/messageTV"
+        app:layout_constraintEnd_toStartOf="@+id/positiveTV"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="@string/no"
+        android:textStyle="bold"
+        android:textAllCaps="true"
+        android:textColor="@color/colorPink"
+        android:textSize="15sp"
+        android:layout_weight="1"/>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

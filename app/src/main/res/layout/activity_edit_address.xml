@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_Cl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activity.EditAddress.EditAddressActivity">
+
+    <include
+        android:id="@+id/edit_aboutToolbar"
+        layout="@layout/app_bar_center_title"
+        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@+id/edit_aboutToolbar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/bot_LL">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="80dp"
+            android:layout_marginTop="16.5dp"
+            >
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="80dp"
+        android:layout_marginTop="16.5dp"
+        >
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/edit_enterAddress_CL"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="16.5dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+
+            android:background="@drawable/background_curve"
+            >
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/edit_name_layout_id"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="10dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edit_name_address_id"
+                    android:layout_width="293dp"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/name"
+                    android:gravity="start"
+                    android:singleLine="true"
+                    android:textSize="10sp"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/edit_mobileNo_layout_id"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                app:layout_constraintTop_toBottomOf="@+id/edit_name_layout_id"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edit_mobileNoAdress_id"
+                    android:layout_width="293dp"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/mobileno"
+                    android:singleLine="true"
+                    android:gravity="start"
+                    android:inputType="number"
+                    android:textSize="10sp"
+
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/edit_pincode_layout_id"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                app:layout_constraintTop_toBottomOf="@+id/edit_mobileNo_layout_id"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edit_pincodeAddress_id"
+                    android:layout_width="293dp"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/pincode"
+                    android:inputType="number"
+                    android:singleLine="true"
+                    android:gravity="start"
+                    android:textSize="10sp"
+
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/edit_address_layout_id"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                app:layout_constraintTop_toBottomOf="@+id/edit_pincode_layout_id"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edit_addressPerson_id"
+                    android:layout_width="293dp"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/address"
+                    android:singleLine="true"
+                    android:gravity="start"
+                    android:textSize="10sp"
+
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/edit_town_layout_id"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                app:layout_constraintTop_toBottomOf="@+id/edit_address_layout_id"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edit_townAddress_id"
+                    android:layout_width="293dp"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/town"
+                    android:gravity="start"
+                    android:singleLine="true"
+                    android:textSize="10sp"
+
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/edit_stateAddress_id"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:hint="@string/state"
+                android:gravity="start"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:focusableInTouchMode="false"
+                android:focusable="false"
+                android:singleLine="true"
+                android:textSize="10sp"
+                android:paddingTop="15dp"
+                android:layout_marginTop="10dp"
+                app:layout_constraintTop_toBottomOf="@+id/edit_town_layout_id"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+
+
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/spinerSymbol"
+                android:layout_width="13dp"
+                android:layout_height="8dp"
+                app:layout_constraintTop_toTopOf="@+id/edit_stateAddress_id"
+                app:layout_constraintEnd_toEndOf="@+id/edit_stateAddress_id"
+                android:layout_marginEnd="10dp"
+                app:layout_constraintBottom_toBottomOf="@+id/edit_stateAddress_id"
+                android:src="@drawable/arrow_down"/>
+            <View
+                android:id="@+id/state_view_id"
+                android:layout_width="0dp"
+                android:layout_height="0.1dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/edit_stateAddress_id"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/colorBlack"
+                android:layout_marginBottom="20dp"
+                />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/edit_cityAddress_id"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:gravity="start"
+                android:hint="@string/city"
+                android:paddingTop="15dp"
+                android:singleLine="true"
+                android:textSize="10sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/state_view_id" />
+
+
+
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/edit_city_spiner"
+                android:layout_width="13dp"
+                android:layout_height="8dp"
+                app:layout_constraintTop_toTopOf="@+id/edit_cityAddress_id"
+                app:layout_constraintEnd_toEndOf="@+id/edit_cityAddress_id"
+                android:layout_marginEnd="10dp"
+                app:layout_constraintBottom_toBottomOf="@+id/edit_cityAddress_id"
+                android:src="@drawable/arrow_down"/>
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0.1dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/edit_cityAddress_id"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/colorBlack"
+                />
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/edit_typeBaseCl"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_curve"
+            app:layout_constraintTop_toBottomOf="@+id/edit_enterAddress_CL"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="19.5dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/edit_typeOfAddressTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="15.5dp"
+                android:layout_marginStart="20dp"
+                android:textSize="9sp"
+                android:text="@string/typeofaddress"/>
+
+            <LinearLayout
+                android:id="@+id/edit_addressRadioLL"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/edit_typeOfAddressTV"
+                android:layout_marginTop="17dp"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <RadioGroup
+                    android:id="@+id/edit_radioAddress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginStart="19dp">
+                    <RadioButton
+                        android:id="@+id/edit_home_radio_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:textSize="10sp"
+                        android:text="@string/home" />
+                    <RadioButton
+                        android:id="@+id/edit_office_radio_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/office"
+                        android:layout_marginStart="50dp"
+                        android:textSize="10sp"
+                        android:layout_gravity="center_horizontal"
+                        />
+                </RadioGroup>
+
+            </LinearLayout>
+            <androidx.appcompat.widget.AppCompatCheckBox
+                android:id="@+id/edit_mydefaultadrsCheckBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/edit_addressRadioLL"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:text="@string/default_address"
+                android:layout_marginStart="17.5dp"
+                android:layout_marginTop="17dp"
+                android:layout_marginBottom="10dp"
+                android:textSize="10sp"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+    <LinearLayout
+        android:id="@+id/bot_LL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/edit_newaddress_cancelBaseCL"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:visibility="visible"
+            android:layout_weight="1"
+            android:background="@color/colorWhite"
+            android:layout_marginEnd="0.5dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            >
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+
+                android:id="@+id/edit_newaddress_cancel_Tv"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_width="wrap_content"
+                android:text="@string/cancel"
+                android:gravity="center"
+                android:textColor="@color/colorBlack"
+                android:textSize="15sp"
+                android:layout_marginTop="16dp"
+
+
+                android:layout_height="wrap_content"/>
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/edit_new_address_saveBaseCL"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:visibility="visible"
+            android:layout_weight="1"
+            android:background="@color/colorPink"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+
+                android:id="@+id/edit_new_address_save_Tv"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="16dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_width="wrap_content"
+                android:text="@string/save"
+
+                android:textColor="@color/colorWhite"
+                android:textSize="15sp"
+
+                android:layout_height="wrap_content"/>
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

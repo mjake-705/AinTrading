@@ -1,0 +1,730 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundcolor"
+    tools:context=".ui.activity.AddressDetail.AddressDetailActivity">
+
+    <com.ain.trading.customviews.CustomiseScrollView
+        android:id="@+id/productBaseSV"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:paddingBottom="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <include
+                android:id="@+id/address_head_Toolbar"
+                layout="@layout/app_bar_center_title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/outer_CL"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/address_head_Toolbar"
+    app:layout_constraintEnd_toEndOf="parent">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/add_new_Cl"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        >
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/addsNewAddress_Tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/select_address"
+            android:textColor="@color/colorPink"
+            android:textSize="13sp"
+            android:gravity="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    //
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/baseAddressCL"
+        android:layout_width="0dp"
+        android:visibility="gone"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16.5dp"
+        android:layout_marginTop="16.5dp"
+        android:layout_marginEnd="16.5dp"
+        android:layout_marginBottom="16.5dp"
+        android:background="@color/colorWhite"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/name_Person"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Beena"
+            android:layout_marginStart="25dp"
+            android:textColor="@color/colorBlack"
+            android:gravity="center"
+            android:singleLine="true"
+            android:textStyle="bold"
+           app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+
+            android:layout_marginTop="17.5dp"
+            android:textSize="12sp"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/default_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="3dp"
+            android:text="@string/defalt"
+            android:textColor="@color/colorPink"
+            android:textSize="12sp"
+
+            app:layout_constraintBottom_toBottomOf="@id/name_Person"
+            app:layout_constraintStart_toEndOf="@id/name_Person"
+            app:layout_constraintTop_toTopOf="@id/name_Person" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/home_addrs_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="140dp"
+            android:gravity="center"
+            android:text="HOME"
+            android:textSize="10sp"
+            app:layout_constraintBottom_toBottomOf="@+id/default_text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/default_text"
+            app:layout_constraintTop_toTopOf="@+id/default_text" />
+
+
+
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/address_detail_CL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/name_Person"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/mobile_tv"
+            android:layout_marginStart="30.5dp"
+            >
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/primaryaddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Module : 12"
+                android:textSize="12sp"
+                android:singleLine="true"
+
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintBottom_toTopOf="@+id/locationAddress"
+                />
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/locationAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Module : 12"
+                android:textSize="12sp"
+                app:layout_constraintTop_toBottomOf="@+id/primaryaddress"
+                app:layout_constraintBottom_toTopOf="@+id/cityOfAddress"
+                android:singleLine="true"
+
+                app:layout_constraintStart_toStartOf="parent"
+                />
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/cityOfAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Module : 12"
+                android:textSize="12sp"
+                app:layout_constraintTop_toBottomOf="@+id/locationAddress"
+                app:layout_constraintBottom_toTopOf="@+id/stateOfAddress"
+                android:singleLine="true"
+
+                app:layout_constraintStart_toStartOf="parent"
+                />
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/stateOfAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Module : 12"
+                android:textSize="12sp"
+                app:layout_constraintTop_toBottomOf="@+id/cityOfAddress"
+                android:singleLine="true"
+
+                app:layout_constraintStart_toStartOf="parent"
+                />
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/comaa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=","
+                android:textSize="12sp"
+                android:layout_marginStart="1dp"
+                app:layout_constraintStart_toEndOf="@+id/stateOfAddress"
+                app:layout_constraintTop_toBottomOf="@+id/cityOfAddress"
+                android:singleLine="true"
+
+
+                />
+           <!-- <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/mypincode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Module : 12"
+                android:textSize="12sp"
+                android:layout_marginStart="6dp"
+                app:layout_constraintStart_toEndOf="@+id/comaa"
+                app:layout_constraintTop_toBottomOf="@+id/cityOfAddress"
+                android:singleLine="true"
+
+
+                />
+-->
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/mobile_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mobile"
+            android:textSize="12sp"
+
+            app:layout_constraintTop_toBottomOf="@+id/address_detail_CL"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/lineNo1"
+
+
+            android:layout_marginStart="30.5dp"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/semiid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=":"
+            android:textSize="12sp"
+
+            app:layout_constraintTop_toTopOf="@+id/mobile_tv"
+            app:layout_constraintStart_toEndOf="@+id/mobile_tv"
+            app:layout_constraintBottom_toBottomOf="@+id/mobile_tv"
+
+
+            android:layout_marginStart="5dp"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/mobileNo_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1234567890"
+            android:textSize="12sp"
+            android:singleLine="true"
+            android:inputType="number"
+            android:maxLength="12"
+
+            app:layout_constraintTop_toBottomOf="@+id/address_detail_CL"
+            app:layout_constraintStart_toEndOf="@+id/semiid"
+
+            app:layout_constraintTop_toTopOf="@+id/mobile_tv"
+            app:layout_constraintBottom_toBottomOf="@+id/mobile_tv"
+            android:layout_marginEnd="30dp"
+
+            android:layout_marginStart="5dp"
+            />
+        <View
+            android:id="@+id/lineNo1"
+            android:layout_width="305dp"
+            android:layout_height="1dp"
+            android:background="@color/backgroundcolor"
+            app:layout_constraintTop_toBottomOf="@+id/mobileNo_tv"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="13.5dp"
+            android:layout_marginStart="17.5dp"
+            android:layout_marginEnd="17.5dp"
+            />
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_marginBottom="15dp"
+            app:layout_constraintTop_toBottomOf="@+id/lineNo1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/editAddressBaseCL"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:visibility="visible"
+                android:layout_weight="1"
+                android:background="@color/colorWhite"
+                android:layout_marginEnd="0.5dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                >
+
+
+                <androidx.appcompat.widget.AppCompatTextView
+
+                    android:id="@+id/address_edit"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_width="wrap_content"
+                    android:text="@string/edit_or_change"
+                    android:gravity="center"
+                    android:textColor="@color/colorPink"
+                    android:layout_marginTop="10dp"
+                    android:textSize="11sp"
+                    android:layout_marginBottom="5dp"
+
+                    android:layout_height="wrap_content"/>
+
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="0"
+                app:layout_constraintStart_toEndOf="@id/editAddressBaseCL"
+                app:layout_constraintEnd_toStartOf="@+id/addNewAddressCL"
+
+                >
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/backgroundcolor" />
+
+            </LinearLayout>
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/addNewAddressCL"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:visibility="visible"
+                android:layout_weight="1"
+                app:layout_constraintTop_toTopOf="@+id/editAddressBaseCL"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="@+id/editAddressBaseCL">
+
+
+                <androidx.appcompat.widget.AppCompatTextView
+
+                    android:id="@+id/addNewAddress_Tv"
+                    app:layout_constraintEnd_toEndOf="parent"
+
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_marginBottom="5dp"
+                    android:layout_width="wrap_content"
+                    android:text="@string/change_address"
+                    android:layout_marginTop="10dp"
+                    android:textSize="11sp"
+                    android:textColor="@color/colorPink"
+                    android:layout_height="wrap_content"
+
+                    />
+
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+
+
+
+
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+//
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/list_RV_CL"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16.5dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="16.5dp"
+                android:layout_marginBottom="16.5dp"
+                android:background="@color/colorWhite"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/outer_CL">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/cartItemsrecyerView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/price_detailCL"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16.5dp"
+                android:layout_marginTop="16.5dp"
+                android:layout_marginEnd="16.5dp"
+                android:layout_marginBottom="100dp"
+                android:background="@color/colorWhite"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/list_RV_CL">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/priceDetailsHead_TV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16.5dp"
+                    android:layout_marginTop="14dp"
+
+                    android:text="@string/price_detail"
+                    android:textSize="12sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/oderTotal_TV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20.5dp"
+                    android:layout_marginTop="17.5dp"
+                    android:gravity="center"
+                    android:text="@string/ordr_total"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="10sp"
+
+
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/priceDetailsHead_TV"
+
+
+                    />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/view_setails_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="3dp"
+                     android:visibility="invisible"
+                    android:text="@string/view_detail"
+
+                    android:textColor="@color/colorPink"
+                    android:textSize="10sp"
+
+                    app:layout_constraintBottom_toBottomOf="@id/oderTotal_TV"
+                    app:layout_constraintStart_toEndOf="@id/oderTotal_TV"
+
+                    app:layout_constraintTop_toTopOf="@id/oderTotal_TV" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/priceSymbol_tv"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginStart="110dp"
+
+
+                    android:text="$"
+                    android:textSize="9sp"
+
+                    app:layout_constraintBottom_toBottomOf="@id/oderTotal_TV"
+                    app:layout_constraintStart_toEndOf="@+id/view_setails_text"
+                    app:layout_constraintTop_toTopOf="@id/oderTotal_TV" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/items_price_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="6dp"
+
+                    android:singleLine="true"
+
+                    android:text="234556"
+                    android:textSize="10sp"
+
+
+                    app:layout_constraintBottom_toBottomOf="@id/oderTotal_TV"
+                    app:layout_constraintStart_toEndOf="@+id/priceSymbol_tv"
+
+                    app:layout_constraintTop_toTopOf="@id/oderTotal_TV" />
+
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/deliveryCharge_TV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20.5dp"
+                    android:layout_marginTop="17.5dp"
+                    android:gravity="center"
+                    android:text="@string/delivery_charge"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="10sp"
+
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/oderTotal_TV"
+
+                    />
+
+                <androidx.appcompat.widget.AppCompatTextView
+
+                    android:id="@+id/pricesymbol_tv2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="150dp"
+
+
+                    android:text="$"
+                    android:textSize="10sp"
+
+                    app:layout_constraintBottom_toBottomOf="@id/deliveryCharge_TV"
+                    app:layout_constraintStart_toEndOf="@+id/deliveryCharge_TV"
+
+
+                    app:layout_constraintTop_toTopOf="@id/deliveryCharge_TV"
+
+                    />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/deliverychargePriceTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+
+                    android:layout_marginStart="4dp"
+                    android:singleLine="true"
+                    android:text="0"
+                    android:textSize="10sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/pricesymbol_tv2"
+                    app:layout_constraintStart_toEndOf="@+id/pricesymbol_tv2"
+                    app:layout_constraintTop_toTopOf="@+id/pricesymbol_tv2"
+
+
+                    />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/free_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:singleLine="true"
+                    android:text="FREE"
+
+                    android:textSize="10sp"
+
+                    app:layout_constraintBottom_toBottomOf="@+id/pricesymbol_tv2"
+                    app:layout_constraintStart_toEndOf="@+id/deliverychargePriceTv"
+                    app:layout_constraintTop_toTopOf="@+id/pricesymbol_tv2"
+
+                    />
+
+                <View
+                    android:id="@+id/lineNo2"
+                    android:layout_width="290.5dp"
+                    android:layout_height="0.5dp"
+
+                    android:layout_marginLeft="15.5dp"
+                    android:layout_marginTop="13.5dp"
+                    android:layout_marginEnd="21.5dp"
+                    android:background="@color/colorBlack"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/deliveryCharge_TV" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/totalpruce_TV"
+                    android:layout_width="23dp"
+                    android:layout_height="12dp"
+                    android:layout_marginLeft="20.5dp"
+                    android:layout_marginTop="12dp"
+                    android:gravity="center"
+                    android:text="@string/total"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="9sp"
+
+
+                    app:layout_constraintRight_toLeftOf="@+id/priceSymbol_tv3"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/lineNo2"
+
+
+                    />
+
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/priceSymbol_tv3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="200dp"
+                    android:text="$"
+                    android:textSize="8sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/totalpruce_TV"
+                    app:layout_constraintStart_toEndOf="@+id/totalpruce_TV"
+                    app:layout_constraintTop_toBottomOf="@id/lineNo2"
+                    app:layout_constraintTop_toTopOf="@+id/totalpruce_TV" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/itemsTotal_price_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:singleLine="true"
+                    android:text="234556"
+                    android:textSize="10sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/totalpruce_TV"
+                    app:layout_constraintStart_toEndOf="@+id/priceSymbol_tv3"
+                    app:layout_constraintTop_toBottomOf="@id/lineNo2"
+                    app:layout_constraintTop_toTopOf="@+id/totalpruce_TV"
+
+                    />
+
+                <androidx.appcompat.widget.AppCompatTextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="10dp"
+                    android:layout_marginStart="5dp"
+                    android:singleLine="true"
+
+                    android:textSize="10sp"
+
+                   app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/itemsTotal_price_tv"
+
+
+                    />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.ain.trading.customviews.CustomiseScrollView>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/addressPricetBaseCL"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="0.5dp"
+            android:layout_weight="1"
+            android:background="@color/colorWhite"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+
+                android:id="@+id/addressPrice_Tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@color/colorBlack"
+                android:textSize="15sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+
+
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/addressSaveBaseCL"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="@color/colorPink"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+
+                android:id="@+id/address_save_Tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/continues"
+                android:textColor="@color/colorWhite"
+                android:textSize="15sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
